@@ -1,0 +1,43 @@
+<html>
+
+	<head>
+
+		<title>Javascript</title>
+
+	</head>
+
+	<body>
+
+		<p id="text">Hello World</p>
+
+		<button id="myButton">Change text</button>
+
+		<p id="2ndp">Javascript is ...</p>
+
+		<button id="2ndbutton">Append text</button>
+
+		<p id="p3"></p>
+
+		<button id="3b">Appear</button>
+
+		<script type="text/javascript">
+
+			document.getElementById("myButton").onclick = function() {
+				document.getElementById("text").innerHTML = "Hello everyone";
+			}
+
+			document.getElementById("2ndbutton").onclick = function() {
+				document.getElementById("2ndp").innerHTML = "I think " + document.getElementById("2ndp").innerHTML + " awesome!";
+			}
+
+			// can put html in your javascript code too!
+
+			document.getElementById("3b").onclick = function () {
+				document.getElementById("p3").innerHTML = "<h1>Appearing text</h1>";
+			}
+			
+		</script>
+
+	</body>
+
+</html>
